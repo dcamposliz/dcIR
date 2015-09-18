@@ -1,69 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TEST</title>
+  <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Impact Radius Dev / Test Sandbox for David">
+    <meta name="keywords" content="Widgets, etc">
+  <!-- CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  <!-- TITLE -->	
+  <title>TEST</title>
 </head>
 <body>
-<h1>
-	This is a test!
-</h1>
-
-<style>
-#search-widget-container{
-  padding:20px;
-  width:336px;
-  height:280px;
-  margin:30px;
-  background:#FFFFFF;
-  border:1px solid #BBBDBF;
-  border-radius:6px;
-  box-shadow:5px 5px 2px rgba(0,0,0,0.1);
-}
-
-.video{
-  margin:10px;
-}
-
-.logo{
-  width:150px;
-}
-
-.submitbutton{
-  background:#fff;
-  color:#3B91CF;
-  font-family:verdana;
-  font-weight:bold;
-    font-size:12px;
-  padding:5px;
-  border-radius:6px;
-border:1px solid  #3B91CF;
-  cursor:pointer;
-}
-
-  .submitbutton:hover{
-    background:#3B91CF;
-    color:#fff;
-
-  }
-
-#widget-search-field{
-    width:220px;
-    margin:10px;
-
-  }
-</style>
-
-<script>
- This Javascript needs to take the value of the Learn More input search box, and post it to "http://www.example.com?searchkeyword='{value}'".
-It can also dynamically build out the form below if that is easy to do or needs to be done in order for the script to work.
-</script>
-
-<div id='search-widget-container'>
- <img src="http://www.impactradius.com/wp-content/uploads/2014/05/impact-radius-logo.png" class="logo">
-<iframe src="http://embed.wistia.com/deliveries/c38a9a6452029a4d248ca79380a46ea081975710/file.mp4" class="video"></iframe>
-<form><input name='searchTerm' id='widget-search-field' type='text' placeholder='Learn More'>
- <input onClick=someJSfunction type='submit' value='Submit' class='submitbutton'>
-</form></div>
+  <!-- HEADER -->
+    <h1>
+    	This is a test!
+    </h1>
+  <!-- WIDGET -->
+  <div id="search-widget-container">
+    <!-- LOGO -->
+  	<img src="http://www.impactradius.com/wp-content/uploads/2014/05/impact-radius-logo.png" class="logo">
+    <!-- VIDEO -->    
+  	<iframe src="http://embed.wistia.com/deliveries/c38a9a6452029a4d248ca79380a46ea081975710/file.mp4" class="video"></iframe>
+    <!-- FORM -->  	
+    <form>
+  		<input name="searchTerm" id="widget-search-field" type="text" placeholder="Learn More">
+  		<input onClick="searchFunction" type="submit" value="Submit" class="submitbutton">
+  	</form>
+  </div>
 
 </body>
 </html>
