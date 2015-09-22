@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Impact Radius Dev / Test Sandbox for David">
+    <meta name="keywords" content="Widgets, etc">
+  <!-- CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  <!-- TITLE -->	
+	<title>Sale</title>
+</head>
+<body>
+
+<!--
+Impact Radius Tracking Code.
+Removal or modification of this code will disrupt marketing activities. This code is property of Impact Radius, please do not remove or modify without first contacting Impact Radius Technical Services.
+-->
+<script type="text/javascript" src="//d33wwcok8lortz.cloudfront.net/js/3930/8755/irv3.js"></script>
+<script type="text/javascript">
+
+	// required advertiser supplied values
+		irEvent.setOrderId("saleOrderID");
+		
+		
+	// At least one item is necessary.  The parameters are
+	// cat: A category, for example "electronics".  Required
+	// sku: A unique product identifier, or Storage Keeping Unit
+	// amt: The total sale amount for this line item.  Required
+	// qty: The quantity of the line item.  Required.
+  irEvent.addItem("electronics", "220-2300", "112000.00", "56");  // 56 identical gizmos at 2000.00 each
+		
+ irEvent.fire();
+</script>
+
+	<h1>This is a sale page!</h1>
+
+	<h2>This triggers the sale action tracker :)</h2>
+
+</body>
+</html>
